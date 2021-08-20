@@ -1,9 +1,9 @@
 const express=require("express")
+const { route } = require("./loginroute")
 const router=express.Router()
 
 router.use('/register',require('./registerroute'))
-// router.use('/updatedata/',require('./updateroute')) 
-// router.use('/deletedata/',require('./deleteroute'))
-// router.use('/getsingledata/',require('./getsingleroute'))
+router.use('/login',require('./loginroute'))
+
 
 module.exports=router
